@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock of life</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="index.js"> </script>
+  </head>
+  <body>
+    <img src="/media/leaves.gif" id="leaves">
+    <img src="/media/cats.gif" id="cats">
+    <img src="/media/heart.gif" id="heart">
+    <img src="/media/mushroom.gif" id="mushroom">
+    <h1>clock of life</h1>  
+    <br>
+    <br>
+    <h3>please enter your:</h3>
+    <form id= "birthdayForm">
+      <label for="dob">date of birth:</label>
+      <input type="date" id="dob" name="dob"><br><br>
+      <label for="time">time of birth:</label>
+      <input type="time" id="time" name="time"><br><br>
+      <input type="button" value="submit" id="submitBtn">
+    </form>
+    <br>
+    <br>
+    <h4> your stats:</h2>
+    <h2 id="age">X years old and counting...</h2>
+    <h2 id="heartbeats">X heartbeats and counting...</h2>
+    <h2 id="breaths">X breaths and counting...</h2>
+
+    <script>
+      document.getElementById('submitBtn').addEventListener('click', calculateTimeElapsed);
+    </script>
+</body>
+</html>
