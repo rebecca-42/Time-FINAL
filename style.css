@@ -3,7 +3,7 @@ body {
     background-image: url("background.PNG");
     background-position: center;
     background-size: auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     color: darkslategray;  
     font-family: 'Public Pixel', sans-serif;  
     position: absolute;
