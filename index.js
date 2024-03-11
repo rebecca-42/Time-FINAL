@@ -50,7 +50,7 @@ function calculateTimeElapsed() {
 
     // SLEEP
     const averageSleep = totalHours / 24 * 8 ;
-    const formattedBeds = averageBeds.toLocaleString();
+    const formattedSleep = averageSleep.toLocaleString();
     // 8 hours of sleep per day is average
     document.getElementById('sleep').innerText = `${formattedSleep} hours slept and counting...`;
 
