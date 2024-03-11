@@ -28,4 +28,17 @@ function calculateTimeElapsed() {
     const formattedBreaths = averageBreaths.toLocaleString();
     // 15 breaths per minute is average
     document.getElementById('breaths').innerText = `${formattedBreaths} breaths and counting...`;
+
+    // COFFEE
+    const averageCoffee = totalMinutes / 720;
+    const formattedCoffee = averageCoffee.toLocaleString();
+    // 2 cups per day is average
+    document.getElementById('coffee').innerText = `${formattedCoffee} cups of coffee and counting...`;
+
+    // BEDS
+    const averageBeds = totalMinutes / 1440;
+    const formattedBeds = averageBeds.toLocaleString();
+    // 1 bed per day is average
+    document.getElementById('beds').innerText = `${formattedBeds} beds made and counting...`;
+
 }
