@@ -16,6 +16,12 @@ function calculateTimeElapsed() {
     const days = moment().diff(momentObject, 'days') % 7;
     const hours = moment().diff(momentObject, 'hours') % 24;
     const minutes = moment().diff(momentObject, 'minutes') % 60;
+
+    const userTimeZone = prompt('Please enter your time zone (e.g., America/New_York):');
+    if (!userTimeZone) {
+        alert('Invalid time zone. Please refresh the page and try again.');
+        return;
+    }
     
     // AGE
     document.getElementById('age').innerText = `${years} years, ${months} months, ${weeks} weeks, ${days} days, ${hours} hours, and ${minutes} minutes old and counting...`;
