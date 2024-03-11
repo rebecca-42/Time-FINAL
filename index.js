@@ -17,7 +17,7 @@ function calculateTimeElapsed() {
     const minutes = moment().diff(momentObject, 'minutes') % 60;
 
     // NAME
-    document.getElementById('name').innerText = `${name}'s stats`;
+    document.getElementById('name-display').innerText = `${name}'s stats`;
 
     // AGE
     document.getElementById('age').innerText = `${years} years, ${months} months, ${weeks} weeks, ${days} days, ${hours} hours, and ${minutes} minutes old and counting...`;
