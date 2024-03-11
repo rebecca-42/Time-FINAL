@@ -11,6 +11,11 @@
     <script src="index.js"> </script>
   </head>
   <body>
+    const userTimeZone = prompt('Please enter your time zone (e.g., America/New_York):');
+    if (!userTimeZone) {
+        alert('Invalid time zone. Please refresh the page and try again.');
+        return;
+    }
     <meta http-equiv="refresh" content="60;url=stats.html">
     <img src="leaves.gif" id="leaves">
     <img src="cats.gif" id="cats">
