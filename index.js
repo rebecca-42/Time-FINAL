@@ -6,6 +6,7 @@ function calculateTimeElapsed() {
 
     const momentObject = moment(datetimeString, "YYYY-MM-DD HH:mm");
     const totalMinutes = moment().diff(momentObject, 'minutes');
+    const totalHours = moment().diff(momentObject, 'hours')
 
     const years = moment().diff(momentObject, 'years');
     const months = moment().diff(momentObject, 'months') % 12;
@@ -40,5 +41,17 @@ function calculateTimeElapsed() {
     const formattedBeds = averageBeds.toLocaleString();
     // 1 bed per day is average
     document.getElementById('beds').innerText = `${formattedBeds} beds made and counting...`;
+
+    // MEALS
+    const averageMeals = totalMinutes / 480;
+    const formattedMeals = averageMeals.toLocaleString();
+    // 3 meals per day is average
+    document.getElementById('meals').innerText = `${formattedMeals} meals made and counting...`;
+
+    // SLEEP
+    const averageSleep = totalHours / 24 * 8 ;
+    const formattedBeds = averageBeds.toLocaleString();
+    // 8 hours of sleep per day is average
+    document.getElementById('sleep').innerText = `${formattedSleep} hours slept and counting...`;
 
 }
