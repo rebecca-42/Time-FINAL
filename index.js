@@ -15,7 +15,6 @@ function calculateTimeElapsed() {
     const days = moment().diff(momentObject, 'days') % 7;
     const hours = moment().diff(momentObject, 'hours') % 24;
     const minutes = moment().diff(momentObject, 'minutes') % 60;
-    }
 
     // NAME
     document.getElementById('name').innerText = `${name}'s stats`;
