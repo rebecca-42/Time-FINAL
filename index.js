@@ -1,13 +1,11 @@
 function calculateTimeElapsed() {
-        
+    const name = document.getElementById('name').value;
     const dobInput = document.getElementById('dob').value;
     const timeInput = document.getElementById('time').value;
     
     const datetimeString = dobInput + " " + timeInput;
     const momentObject = moment.tz(datetimeString, "YYYY-MM-DD HH:mm");
 
-    
-    const momentObject = moment(datetimeString, "YYYY-MM-DD HH:mm");
     const totalMinutes = moment().diff(momentObject, 'minutes');
     const totalHours = moment().diff(momentObject, 'hours')
 
