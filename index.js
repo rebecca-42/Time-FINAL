@@ -59,5 +59,3 @@ function calculateTimeElapsed() {
     document.getElementById('sleep').innerText = `${formattedSleep} hours slept and counting...`;
 
 }
-
-document.getElementById('submitBtn').addEventListener('click', calculateTimeElapsed);
