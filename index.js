@@ -1,12 +1,6 @@
 function calculateTimeElapsed() {
     const dobInput = document.getElementById('dob').value;
     const timeInput = document.getElementById('time').value;
-
-    const userTimeZone = prompt('Please enter your time zone (e.g., America/New_York):');
-    if (!userTimeZone) {
-        alert('Invalid time zone. Please refresh the page and try again.');
-        return;
-    }
     
     const datetimeString = dobInput + " " + timeInput;
     const momentObject = moment.tz(datetimeString, "YYYY-MM-DD HH:mm", userTimeZone);
